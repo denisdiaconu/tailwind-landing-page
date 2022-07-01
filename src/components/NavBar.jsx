@@ -1,4 +1,5 @@
 import React from 'react'
+import GraButton from './button/GraButton'
 
 function NavBar() {
     const linksList = [
@@ -41,6 +42,10 @@ function NavBar() {
                         </li>
                     ))}
                 </ul>
+                <GraButton name='GET LAPAGE' className='ml-4' />
+            </div>
+            <div>
+                
             </div>
         </div>
     </div>
