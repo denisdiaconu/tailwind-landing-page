@@ -1,9 +1,13 @@
+import { useState } from 'react';
 import NavBar from './components/NavBar';
 
 function App() {
+  const [isMenu, setIsMenu] = useState();
+
+
   return (
     <div>
-      <NavBar />
+      <NavBar isMenu={isMenu} setIsMenu={setIsMenu}/>
     </div>
   );
 }

@@ -1,7 +1,8 @@
-import React from 'react'
-import GraButton from './button/GraButton'
+import React from 'react';
+import GraButton from './button/GraButton';
+import { FaTimes, FaBars } from 'react-icons/fa';
 
-function NavBar() {
+function NavBar({ isMenu, setIsMenu }) {
     const linksList = [
         {
             link: 'HOME',
@@ -27,6 +28,7 @@ function NavBar() {
 
 
   return (
+    <>
     <div className='w-full absolute bg-black h-24 text-white z-20'>
         <div className='flex mx-auto px-4 h-full items-center justify-between max-w-screen-xl'>
             <div>
@@ -34,7 +36,7 @@ function NavBar() {
                     LAPAGE
                 </h1>
             </div>
-            <div className='md:flex items-center hidden'>
+            <div className='lg:flex items-center hidden'>
                 <ul className='flex'>
                     {linksList.map(link => (
                         <li key={link.id} className='cursor-pointer p-4 duration-300 hover:text-tBlue'>
@@ -42,13 +44,26 @@ function NavBar() {
                         </li>
                     ))}
                 </ul>
-                <GraButton name='GET LAPAGE' className='ml-4' />
+                <GraButton name='GET LAPAGE' className='ml-4 hidden smb:flex' />
             </div>
-            <div>
-                
+            <div className='block lg:hidden' onClick={() => setIsMenu(!isMenu)}>
+                {isMenu ? <FaTimes size={30} /> : <FaBars size={30} />}
             </div>
         </div>
     </div>
+
+    <div className={` absolute z-10 h-fit py-12 text-2xl left-0 w-full duration-500 bg-black text-white lg:hidden flex text-center justify-center ${
+        isMenu ? 'opacity-95 rounded-b-2xl top-24' : 'top-[-100%]'
+    }`}>
+        <ul>
+            {linksList.map(link => (
+                <li key={link.id} className='p-3'>{link.link}</li>
+            ))}
+            <GraButton name='GET LAPAGE' className='mt-10' />
+        </ul>
+    </div>
+
+    </>
   )
 }
 

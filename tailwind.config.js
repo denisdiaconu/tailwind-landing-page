@@ -9,6 +9,9 @@ module.exports = {
         tBlue: "#35EEED",
         tPurple: "#ED02FF",
         tOrange: "#F9A23F"
+      },
+      screens: {
+        'smb': '1050px'
       }
     },
   },
