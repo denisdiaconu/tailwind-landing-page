@@ -1,6 +1,6 @@
-import React, { useRef, useState} from 'react'
+import React, { useRef, useState} from 'react';
 import { FaPauseCircle, FaPlayCircle } from 'react-icons/fa';
-import backgroundVideo from '../assets/backgroundVideo.mp4'
+import backgroundVideo from '../assets/backgroundVideo.mp4';
 import GraButton from './button/GraButton';
 
 const TopSection = ({isMenu}) => {
