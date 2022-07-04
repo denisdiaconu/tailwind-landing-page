@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import NavBar from './components/NavBar';
+import TopSection from './components/TopSection';
 
 function App() {
   const [isMenu, setIsMenu] = useState();
@@ -8,6 +9,7 @@ function App() {
   return (
     <div>
       <NavBar isMenu={isMenu} setIsMenu={setIsMenu}/>
+      <TopSection isMenu={isMenu} />
     </div>
   );
 }
