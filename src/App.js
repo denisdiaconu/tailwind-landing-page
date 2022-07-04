@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import NavBar from './components/NavBar';
+import Products from './components/Products';
 import TopSection from './components/TopSection';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div>
       <NavBar isMenu={isMenu} setIsMenu={setIsMenu}/>
       <TopSection isMenu={isMenu} />
+      <Products />
     </div>
   );
 }
