@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Contact from './components/Contact';
 import Customers from './components/Customers';
 import Developer from './components/Developer';
 import NavBar from './components/NavBar';
@@ -16,6 +17,7 @@ function App() {
       <Products />
       <Developer />
       <Customers />
+      <Contact />
     </div>
   );
 }
