@@ -1,5 +1,5 @@
-import React from 'react'
-import codeCode from '../assets/codecode-min.jpg'
+import React from 'react';
+import codeCode from '../assets/codecode-min.jpg';
 import PageSection from './PageSection';
 
 const Developer = () => {
