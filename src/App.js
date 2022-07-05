@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Customers from './components/Customers';
 import Developer from './components/Developer';
 import NavBar from './components/NavBar';
 import Products from './components/Products';
@@ -14,6 +15,7 @@ function App() {
       <TopSection isMenu={isMenu} />
       <Products />
       <Developer />
+      <Customers />
     </div>
   );
 }
