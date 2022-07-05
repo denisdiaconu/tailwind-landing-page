@@ -5,23 +5,23 @@ import { FaTimes, FaBars } from 'react-icons/fa';
 function NavBar({ isMenu, setIsMenu }) {
     const linksList = [
         {
-            link: 'HOME',
+            link: 'Home',
             id: 1
         },
         {
-            link: 'PRODUCTS',
+            link: 'Products',
             id: 2
         },
         {
-            link: 'DEVELOPER',
+            link: 'Developer Area',
             id: 3
         },
         {
-            link: 'CUSTOMERS',
+            link: 'Customers',
             id: 4
         },
         {
-            link: 'CONTACT',
+            link: 'Contact',
             id: 5
         }
     ]
@@ -39,7 +39,7 @@ function NavBar({ isMenu, setIsMenu }) {
             <div className='lg:flex items-center hidden'>
                 <ul className='flex'>
                     {linksList.map(link => (
-                        <li key={link.id} className='cursor-pointer p-4 duration-300 hover:text-tBlue'>
+                        <li key={link.id} className='cursor-pointer uppercase p-4 duration-300 hover:text-tBlue'>
                             {link.link}
                         </li>
                     ))}
