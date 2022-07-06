@@ -60,7 +60,11 @@ function NavBar({ isMenu, setIsMenu }) {
     }`}>
         <ul>
             {linksList.map(link => (
-                <li key={link.id} className='p-3'>{link.link}</li>
+                <li key={link.id} className='p-3'>
+                    <Link onClick={() => setIsMenu(false)} to={link.link} smooth duration={500}>
+                    {link.link}
+                    </Link>
+                </li>
             ))}
             <GraButton name='GET LAPAGE' className='mt-10' />
         </ul>
