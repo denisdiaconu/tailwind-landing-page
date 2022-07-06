@@ -1,5 +1,5 @@
-import React from 'react'
-import FooterCard from './FooterCard'
+import React from 'react';
+import FooterCard from './FooterCard';
 
 const Footer = () => {
     const links = [

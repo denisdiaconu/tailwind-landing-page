@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import GraButton from './button/GraButton';
 import { FaTimes, FaBars } from 'react-icons/fa';
 
@@ -40,7 +41,9 @@ function NavBar({ isMenu, setIsMenu }) {
                 <ul className='flex'>
                     {linksList.map(link => (
                         <li key={link.id} className='cursor-pointer uppercase p-4 duration-300 hover:text-tBlue'>
+                            <Link to={link.link} smooth duration={500}>
                             {link.link}
+                            </Link>
                         </li>
                     ))}
                 </ul>
