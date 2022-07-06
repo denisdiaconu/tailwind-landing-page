@@ -27,14 +27,14 @@ const TopSection = ({isMenu}) => {
             <h1 className='text-5xl lg:text-7xl'>Web 3.0</h1>
             <h1 className='mb-14 text-5xl lg:text-7xl'>
             The <span className='font-bold text-tBlue'>Future</span> Is Here</h1>
-            <div className='flex flex-row justify-center items-center'>
-                <GraButton className='w-40' name='Get Lapage' />
-                <GraButton className='mx-12 w-40' name='Products' />
+            <div className='flex gap12 justify-center items-center'>
+                <GraButton className='w-40 mr-12' name='Get Lapage' />
+                <GraButton className='w-40 hidden smm:flex' name='Products' />
                 {
                     isVideoOn ? (
-                        <FaPauseCircle size={30} className='text-tBlue cursor-pointer duration-300 hover:scale-125' onClick={handlePause} />
+                        <FaPauseCircle size={30} className='text-tBlue cursor-pointer duration-300 hover:scale-125 smm:ml-12' onClick={handlePause} />
                     ) : (
-                        <FaPlayCircle size={30} className='text-tBlue cursor-pointer duration-300 hover:scale-125 ' onClick={handlePlay} />
+                        <FaPlayCircle size={30} className='text-tBlue cursor-pointer duration-300 hover:scale-125 smm:ml-12' onClick={handlePlay} />
                     )
                 }
             </div>

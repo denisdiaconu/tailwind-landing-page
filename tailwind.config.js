@@ -11,7 +11,8 @@ module.exports = {
         tOrange: "#F9A23F"
       },
       screens: {
-        'smb': '1050px'
+        'smb': '1050px',
+        'smm': '550px'
       }
     },
   },
