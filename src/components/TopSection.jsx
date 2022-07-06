@@ -19,7 +19,7 @@ const TopSection = ({isMenu}) => {
 
   return (
     <div className="flex text-center h-screen w-full justify-center items-end">
-        <video ref={videoRef} src={backgroundVideo} muted loop autoPlay
+        <video ref={videoRef} src={backgroundVideo} muted loop autoPlay playsinline
         className='h-full w-full absolute -z-10 object-cover' />
         <div className={`flex flex-col justify-center items-center duration-500 w-full p-8 ${
             isVideoOn ? '' : 'bg-black/80'
