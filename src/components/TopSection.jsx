@@ -29,7 +29,7 @@ const TopSection = ({isMenu}) => {
             The <span className='font-bold text-tBlue'>Future</span> Is Here</h1>
             <div className='flex gap12 justify-center items-center'>
                 <GraButton className='w-40 mr-12' name='Get Lapage' />
-                <GraButton className='w-40 hidden smm:flex' name='Products' />
+                <GraButton className='w-40 hidden smm:flex smm:justify-center' name='Products' />
                 {
                     isVideoOn ? (
                         <FaPauseCircle size={30} className='text-tBlue cursor-pointer duration-300 hover:scale-125 smm:ml-12' onClick={handlePause} />
