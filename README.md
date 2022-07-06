@@ -12,7 +12,7 @@ LAPAGE is a landing page built with TailwindCSS and React.
 **Click [here](https://landing-page-denis.netlify.app/) in order to see the page of this project.**
 
 
-![Page](https://github.com/denisdiaconu/tailwind-landing-page/blob/master/src/assets/screen.pdf)
+![Page](https://github.com/denisdiaconu/tailwind-landing-page/blob/master/src/assets/screen.jpeg)
 
 
 ## Getting Started
