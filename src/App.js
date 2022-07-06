@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Contact from './components/Contact';
+import Customers from './components/Customers';
+import Developer from './components/Developer';
+import Footer from './components/Footer';
+import NavBar from './components/NavBar';
+import Products from './components/Products';
+import TopSection from './components/TopSection';
 
 function App() {
+  const [isMenu, setIsMenu] = useState();
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar isMenu={isMenu} setIsMenu={setIsMenu}/>
+      <TopSection isMenu={isMenu} />
+      <Products />
+      <Developer />
+      <Customers />
+      <Contact />
+      <Footer />
     </div>
   );
 }
