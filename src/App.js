@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Contact from './components/Contact';
 import Customers from './components/Customers';
 import Developer from './components/Developer';
+import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import Products from './components/Products';
 import TopSection from './components/TopSection';
@@ -18,6 +19,7 @@ function App() {
       <Developer />
       <Customers />
       <Contact />
+      <Footer />
     </div>
   );
 }

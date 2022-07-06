@@ -4,7 +4,7 @@ import GraButton from './button/GraButton';
 const ContactForm = () => {
   return (
     <div className='text-left p-4'>
-        <form action="" method='POST'>
+        <form action="https://getform.io/f/3bb58f63-cf50-40f5-b345-dfbc507ed2d9" method='POST'>
             <div className='grid lg:grid-cols-2 w-full py-2 gap-4'>
                 <div className='flex flex-col col-span-2 lg:col-span-1'>
                     <label className='text-sm py-2 font-light'>
