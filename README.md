@@ -9,10 +9,10 @@ LAPAGE is a landing page built with TailwindCSS and React.
 - Tailwind
 
 ## 🔴 Live <a name = "here"></a>
-**Click [here](link here) in order to see the page of this project.**
+**Click [here](https://landing-page-denis.netlify.app/) in order to see the page of this project.**
 
 
-![Page](link here)
+![Page](https://github.com/denisdiaconu/tailwind-landing-page/blob/master/src/assets/screen.pdf)
 
 
 ## Getting Started
